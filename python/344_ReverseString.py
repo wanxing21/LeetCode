@@ -10,7 +10,9 @@ class Solution(object):
         length = len(s)
 
         for i in range(length / 2):
-            sList[i], sList[length - 1 - i] = sList[length - 1 - i], sList[i]
+            tmp = sList[i]
+            sList[i] = sList[length - 1 - i]
+            sList[length - 1 -i] = tmp
 
         return ''.join(sList)
 
