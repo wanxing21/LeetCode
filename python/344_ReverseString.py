@@ -16,7 +16,6 @@ class Solution(object):
 
         return ''.join(sList)
 
-
 if __name__ == '__main__':
     sol = Solution()
     testStr = 'hello'
